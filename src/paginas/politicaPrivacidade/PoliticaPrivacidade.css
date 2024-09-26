@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --azul-marinho: #007BFF;
+    --verde: #28A745;
+    --branco: #FFFFFF;
+    --cinza: #6C757D;
+    --cor-principal: #33a9b6;
+    --fundo-claro: #f4f4f4;
+    --texto-escuro: #333;
+}
+
+.politica-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: var(--branco);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+    color: var(--texto-escuro);
+}
+
+h1 {
+    font-size: 24px;
+    color: var(--cor-principal);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: var(--cinza);
+}
+
+p:last-child {
+    margin-bottom: 0;
+}

@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --azul-marinho: #007BFF;
+    --verde: #28A745;
+    --branco: #FFFFFF;
+    --cor-principal: #33a9b6;
+    --fundo-claro: #f4f4f4;
+    --texto-escuro: #333;
+}
+
+.parcerias-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: var(--branco);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+    color: var(--texto-escuro);
+}
+
+.parcerias-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.parcerias-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--cor-principal);
+    margin-bottom: 10px;
+}
+
+.parcerias-header p {
+    font-size: 1.2rem;
+    color: var(--texto-escuro);
+    text-align: center;
+}
+
+.parcerias-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.parcerias-section {
+    width: 80%;
+    max-width: 800px;
+    margin-bottom: 40px;
+}
+
+.parcerias-section h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--cor-principal);
+    margin-bottom: 20px;
+}
+
+.parcerias-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--texto-escuro);
+    text-align: justify;
+}
+
+.parcerias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin-bottom: 40px;
+}
+
+.parcerias-member {
+    text-align: center;
+}
+
+.parcerias-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.parcerias-member p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--texto-escuro);
+}
+
+@media (max-width: 768px) {
+    .parcerias-header h1 {
+        font-size: 2rem;
+    }
+
+    .parcerias-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .parcerias-section p {
+        font-size: 1rem;
+    }
+
+    .parcerias-photo {
+        width: 120px;
+        height: 120px;
+    }
+}

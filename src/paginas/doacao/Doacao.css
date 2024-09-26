@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --azul-marinho: #007BFF;
+    --verde: #28A745;
+    --branco: #FFFFFF;
+    --cor-principal: #33a9b6;
+    --fundo-claro: #f4f4f4;
+    --texto-escuro: #333;
+}
+
+.doacao-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: var(--branco);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.doacao-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.doacao-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--cor-principal);
+    margin-bottom: 10px;
+}
+
+.doacao-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.doacao-section {
+    width: 80%;
+    max-width: 800px;
+    margin-bottom: 40px;
+}
+
+.doacao-section h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--cor-principal);
+    margin-bottom: 20px;
+}
+
+.doacao-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--texto-escuro);
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .doacao-header h1 {
+        font-size: 2rem;
+    }
+
+    .doacao-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .doacao-section p {
+        font-size: 1rem;
+    }
+}

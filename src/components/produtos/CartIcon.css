@@ -1,0 +1,14 @@
+/* CartIcon.css */
+.cart-icon-button {
+    width: 60px; /* Aumenta a largura do botão */
+    height: 60px; /* Aumenta a altura do botão */
+    background-color: transparent; /* Faz o botão ser transparente */
+    border: none; /* Remove a borda */
+    cursor: pointer; /* Muda o cursor para um ponteiro quando o mouse passa */
+    color: #33a9b6; /* Define a cor do ícone */
+    font-size: 30px; /* Aumenta o tamanho do ícone */
+    position: fixed; /* Fixa o ícone na tela */
+    right: 20px; /* Posiciona à direita da tela */
+    bottom: 20px; /* Posiciona na parte inferior da tela */
+    z-index: 100; /* Garante que o ícone fique acima de outros elementos */
+  }

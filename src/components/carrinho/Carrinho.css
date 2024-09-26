@@ -1,0 +1,88 @@
+/* Carrinho.css */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+.container {
+    padding: 0 1rem;
+    background-color: #fff; /* Fundo branco para a página */
+    color: #333; /* Cor do texto padrão */
+  }
+  
+  .text {
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd; /* Cor de borda suave */
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    background-color: #f9f9f9; /* Cor de fundo clara para itens */
+    color: #333; /* Cor do texto padrão */
+  
+  }
+  
+  li p {
+    margin: 0;
+  }
+  
+  li .text-right {
+    text-align: right;
+    color: #33a9b6; /* Cor do preço */
+  }
+  
+  button {
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    cursor: pointer;
+    width: 150px;
+  }
+  
+  .bg-red-500 {
+    background-color: #e53e3e; /* Cor de fundo para o botão de remover */
+    color: white; /* Cor do texto dos botões */
+  }
+  
+  .bg-green-500 {
+    background-color: #38a169; /* Cor de fundo para o botão de finalizar compra */
+    color: white; /* Cor do texto dos botões */
+  }
+  
+  .bg-blue-500 {
+    background-color: #33a9b6; /* Cor de fundo para o botão de doar produtos */
+    color: white; /* Cor do texto dos botões */
+  }
+  
+  .text-white {
+    color: white;
+  }
+  
+  .p-2 {
+    padding: 0.5rem;
+  }
+  
+  .p-4 {
+    padding: 1rem;
+  }
+  
+  .mt-2 {
+    margin-top: 0.5rem;
+  }
+  
+  .mt-4 {
+    margin-top: 1rem;
+  }
+  
+  .ml-2 {
+    margin-left: 0.5rem;
+  }
+  

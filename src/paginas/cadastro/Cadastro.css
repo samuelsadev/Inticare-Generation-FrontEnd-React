@@ -1,0 +1,111 @@
+/* Estilos da página de cadastro */
+
+.container-cadastro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f3f7fc; /* Cor de fundo neutra */
+}
+
+.form-cadastro {
+  background-color: white; /* Cor de fundo do formulário */
+  padding: 3rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra leve para destacar o formulário */
+  max-width: 600px; /* Limitar a largura máxima do formulário */
+  width: 100%;
+  font-size: 1.500rem; /* Aumentar o tamanho da fonte */
+}
+
+/* Fonte padrão aplicada a labels e título */
+.label-tooltip, h2 {
+  font-family: 'Arial', sans-serif; /* Substitua 'Arial' pela fonte desejada */
+}
+
+/* Transições e estilos adicionais */
+button {
+  transition: background-color 0.3s ease;
+}
+
+label {
+  color: #33a9b6; /* Cor do texto das labels */
+  font-weight: bold;
+  position: relative; /* Necessário para posicionar o tooltip */
+  display: inline-block; /* Permite o posicionamento do tooltip */
+  cursor: pointer; /* Indica que a label é interativa */
+}
+
+/* Estilo do tooltip */
+.label-tooltip .tooltip-text {
+  visibility: hidden; /* Inicialmente escondido */
+  width: 200px; /* Ajuste conforme necessário */
+  background-color: #333; /* Cor de fundo do tooltip */
+  color: #fff; /* Cor do texto do tooltip */
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Posiciona o tooltip acima da label */
+  left: 50%;
+  margin-left: -100px; /* Centraliza o tooltip */
+  opacity: 0; /* Inicialmente invisível */
+  transition: opacity 0.3s; /* Transição suave */
+}
+
+/* Mostra o tooltip quando o mouse passa sobre a label */
+.label-tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+input {
+  border: 2px solid #33a9b6;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 1rem; /* Ajuste a margem inferior dos campos de entrada */
+  font-size: 1.125rem;
+}
+
+/* Adiciona margem entre os grupos de campos */
+.flex {
+  margin-bottom: 1rem; /* Espaço entre grupos de campos */
+}
+
+button {
+  background-color: #33a9b6;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #2a8b9a; /* Cor mais escura no hover */
+}
+
+h2 {
+  color: #33a9b6; /* Cor do título */
+  margin-bottom: 2rem; /* Espaçamento após o título */
+  text-align: center;
+  font-size: 2rem; /* Tamanho do título */
+  font-family: 'Arial', sans-serif; /* Substitua 'Arial' pela fonte desejada */
+}
+
+h2 strong {
+  font-weight: bold; /* Aplica o negrito apenas à palavra "INTICARE" */
+}
+
+p {
+  font-size: 1.125rem; /* Tamanho da fonte da descrição */
+  text-align: center;
+  margin-bottom: 2rem; /* Espaçamento após o parágrafo */
+}
+
+/* Adicionado para espaçamento entre o último campo e os botões */
+.container-botoes {
+  margin-top: 2rem; /* Ajuste conforme necessário */
+}
