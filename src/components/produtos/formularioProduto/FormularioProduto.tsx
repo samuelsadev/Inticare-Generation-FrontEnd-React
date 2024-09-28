@@ -25,7 +25,7 @@ function FormularioProduto() {
     descricao: '',
     preco: 0,
     quantidade: 0,
-    foto_produto: '', // Inicialize com uma string vazia
+    fotoProduto: '', // Inicialize com uma string vazia
     categoriaModel: null,
     usuarioModel: null,
   });
@@ -99,7 +99,7 @@ function FormularioProduto() {
     // Garantir que fotoProduto não seja null
     const produtoParaEnviar = {
       ...produto,
-      fotoProduto: produto.foto_produto || '', // Se fotoProduto for null, substitua por uma string vazia
+      fotoProduto: produto.fotoProduto || '', // Se fotoProduto for null, substitua por uma string vazia
     };
 
     if (id != undefined) {
@@ -194,13 +194,13 @@ function FormularioProduto() {
           </select>
         </div>
         <div className="flex flex-col gap-2">
-          <label htmlFor="foto_produto">URL da Imagem</label>
+          <label htmlFor="fotoProduto">URL da Imagem</label>
           <input
-            value={produto.foto_produto}
+            value={produto.fotoProduto}
             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
             type="text"
             placeholder="URL da Imagem"
-            name="foto_produto"
+            name="fotoProduto"
             className="border-2 border-slate-700 rounded p-2"
           />
         </div>

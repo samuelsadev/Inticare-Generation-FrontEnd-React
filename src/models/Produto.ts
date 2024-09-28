@@ -7,7 +7,7 @@ export default interface Produto {
   descricao: string;
   preco: number;
   quantidade: number;
-  foto_produto: string; // Alterado para o nome correto da propriedade
+  fotoProduto: string; // Alterado para o nome correto da propriedade
   categoriaModel: Categoria | null;
   usuarioModel: Usuario | null;
 }
