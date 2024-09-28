@@ -20,7 +20,7 @@ function CardProduto({ post }: CardProdutoProps) {
       quantidade: 1,
       categoriaModel: post.categoriaModel,
       usuarioModel: null,
-      foto_produto: post.foto_produto,
+      fotoProduto: post.fotoProduto,
     };
     adicionarAoCarrinho(itemCarrinho);
   };
@@ -28,9 +28,9 @@ function CardProduto({ post }: CardProdutoProps) {
   return (
     <div className="card">
       <div>
-        {post.foto_produto && (
+        {post.fotoProduto && (
           <img
-            src={post.foto_produto}
+            src={post.fotoProduto}
             alt={post.nomeProduto}
             className="card-img"
           />
